@@ -1,3 +1,6 @@
+[user]
+  name = Devs UP 
+  email = contato@devsup.com.br
 [alias]
   co = checkout
   ci = commit
@@ -19,12 +22,9 @@
 [grep]
   linenumber = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	rustExitCode = true
-	trustExitCode = true
-[user]
-	name = Paulo Henrique Nonaka
-	email = paulononaka@gmail.com
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  rustExitCode = true
+  trustExitCode = true
