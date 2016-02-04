@@ -25,3 +25,6 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	rustExitCode = true
 	trustExitCode = true
+[user]
+	name = Paulo Henrique Nonaka
+	email = paulononaka@gmail.com
