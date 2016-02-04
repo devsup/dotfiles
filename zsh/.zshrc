@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/devsup/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(autojump git osx)
 
 # User configuration
 
@@ -83,12 +83,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export ANDROID_SDK="$HOME/Library/Android/sdk/"
 export PATH="$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools/"
-# Add the following to your ~/.bashrc or ~/.zshrc
-#
-# Alternatively, copy/symlink this file and source in your shell.  See `hitch --setup-path`.
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
 
 ps1() {
   PS1="$PS1%{$fg_bold[yellow]%}$GIT_AUTHOR_NAME%{$reset_color%}$ "
@@ -100,6 +98,6 @@ hitch() {
 }
 alias unhitch='hitch -u'
 
-# Uncomment to persist pair info between terminal instances
+# persist pair info between terminal instances
 hitch
 ps1
