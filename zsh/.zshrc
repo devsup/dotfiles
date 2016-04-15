@@ -87,6 +87,9 @@ export ANDROID_SDK="$HOME/Library/Android/sdk/"
 export PATH="$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools/"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+export ELDER_DATABASE_URL_DEV="postgres://$USER@localhost/elder_dev?pool=10"
+export ELDER_DATABASE_URL_TEST="postgres://$USER@localhost/elder_test?pool=10"
 
 ps1() {
   PS1="$PS1%{$fg_bold[yellow]%}$GIT_AUTHOR_NAME%{$reset_color%}$ "
