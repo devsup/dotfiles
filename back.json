@@ -1,0 +1,12 @@
+[
+  {
+    "RegiaoId": 16,
+    "Nome": "PR",
+    "Descricao": "Paraná"
+  },
+  {
+    "RegiaoId": 26,
+    "Nome": "SP",
+    "Descricao": "São Paulo"
+  }
+]
