@@ -33,6 +33,7 @@ Bundle 'ervandew/supertab'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
 Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'jpo/vim-railscasts-theme'
+Bundle 'elixir-lang/vim-elixir'
 
 filetype plugin indent on
 
@@ -130,3 +131,4 @@ au BufWrite * :call DeleteTrailingWS()
 let g:vim_tags_auto_generate = 1
 
 iab xpry require 'pry'; binding.pry;
+iab epry require IEx; IEx.pry;
