@@ -1,6 +1,3 @@
-[user]
-  name = Devs UP 
-  email = contato@devsup.com.br
 [alias]
   co = checkout
   ci = commit

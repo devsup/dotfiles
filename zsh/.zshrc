@@ -90,6 +90,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export ELDER_DATABASE_URL_DEV="postgres://$USER@localhost/elder_dev?pool=10"
 export ELDER_DATABASE_URL_TEST="postgres://$USER@localhost/elder_test?pool=10"
+export ARAYASHIKI_DATABASE_URL_DEV="postgres://postgres@localhost/arayashiki_ws_dev?pool=10"
+export ARAYASHIKI_DATABASE_URL_TEST="postgres://postgres@localhost/arayashiki_ws_test?pool=10"
+export RELX_REPLACE_OS_VARS=true
 
 ps1() {
   PS1="$PS1%{$fg_bold[yellow]%}$GIT_AUTHOR_NAME%{$reset_color%}$ "
@@ -104,3 +107,9 @@ alias unhitch='hitch -u'
 # persist pair info between terminal instances
 hitch
 ps1
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# node
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"

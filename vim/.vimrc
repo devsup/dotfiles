@@ -93,7 +93,9 @@ set autowriteall
 set completeopt=longest,menuone,preview
 set autoread
 set autowrite
+set backup
 set backupdir=~/.tmp/
+set dir=~/.tmp/
 set showfulltag
 set smarttab
 set shiftround
