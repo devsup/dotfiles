@@ -91,11 +91,6 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export ELDER_DATABASE_URL_DEV="postgres://$USER@localhost/elder_dev?pool=10"
 export ELDER_DATABASE_URL_TEST="postgres://$USER@localhost/elder_test?pool=10"
 export RELX_REPLACE_OS_VARS=true
-export AWS_ACCESS_KEY_ID="AKIAJBJSK67RSMXXVZKA"
-export AWS_SECRET_ACCESS_KEY="2eEz5HzrWxnkkbjxe4Gbn7Wc5JbixagnpZN8cC5+"
-export AWS_DEFAULT_REGION="eu-central-1"
-export ARAYASHIKI_DATABASE_URL_DEV="postgres://$(whoami)@localhost/arayashiki_ws_dev?pool=10"
-export ARAYASHIKI_DATABASE_URL_TEST="postgres://$(whoami)@localhost/arayashiki_ws_test?pool=10"
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
